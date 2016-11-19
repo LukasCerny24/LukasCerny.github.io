@@ -187,7 +187,7 @@
 
 setInterval(function(){
 
-	$.getJSON('https://graph.facebook.com/v2.8/?ids=566204770247461_566254300242508&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token=EAACEdEose0cBAMZCuczY0rvzJRsPm4z8xxz1kx7eZB6qZAFOCtgU4vyZAGJhq3a0Q8CLZCuiEtBA6CehjYtx3ZAXvGQeUN2ZAnCvG69SBijvxir20MLGYkcTOOZAogvTvM8RdFdgzzV1kC1EwyMkpefcUu6P1FU9f4ydPUTnJTVO5wZDZD,function(res){
+	$.getJSON('https://graph.facebook.com/v2.8/?ids=566204770247461_566254300242508&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token=935307489947377|SIyjZTQQQIlhIuPEosT9JyhNeT0,function(res){
 		
 		th.text(9251 + res['566204770247461_566254300242508'].reactions_love.summary.total_count);
 
