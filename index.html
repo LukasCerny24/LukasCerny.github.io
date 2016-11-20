@@ -111,7 +111,7 @@
 					</div>
 					<div class="meta">
 						<img src="tup.png" alt="" class="icon">
-						<div class="ch">100</div>
+						<div class="ch"></div>
 						<div class="v">STIMMEN</div>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 					</div>
 					<div class="meta">
 						<img src="h.png" alt="" class="icon">
-						<div class="ct">100</div>
+						<div class="ct"></div>
 						<div class="v">STIMMEN</div>
 					</div>
 				</div>
@@ -187,8 +187,7 @@
 
 setInterval(function(){
 
-	$.getJSON('https://graph.facebook.com/v2.8/?ids=566204770247461_566266760241262&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token=935307489947377|SIyjZTQQQIlhIuPEosT9JyhNeT0,function(res){
-		
+	$.getJSON('https://graph.facebook.com/v2.8/?ids=566204770247461_566266760241262&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token=935307489947377|SIyjZTQQQIlhIuPEosT9JyhNeT0',function(res){
 		th.text(9251 + res['566204770247461_566266760241262'].reactions_love.summary.total_count);
 
 		hh.text(9221 + res['566204770247461_566266760241262'].reactions_like.summary.total_count);
